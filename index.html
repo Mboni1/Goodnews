@@ -4,63 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Good news</title>
-    <style>
-        body{
-            background-color:#071d3c ;
-        }
-        h1{
-            color: #d3e9ff;
-            text-align: right;
-            margin-left: 200px;
-            padding-right: 350px;
-        }
-        p {
-            color: #d3e9ff;
-            text-align: left;
-            margin-right: 200px;
-            padding-left: 250px;
-            font-size: 20px;
-
-
-        }
-        img{
-            position: relative;
-             
-        }
-    
-
-    header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #071d3c; /* Optional background color */
-}
-
-.logo img {
-  height: 150px; /* Adjust based on your logo size */
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: inline-flex;
-  text-align: center;
-}
-
-nav ul li {
-  margin-left: 40px; /* Space between navigation links */
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #d3e9ff;
-  font-weight: bold;
-  font-size: 20px;
-}
-          
- </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
  <header>
@@ -82,13 +26,19 @@ nav ul li a {
     </ul>
   </nav>
 </header>
-<h1>All over the World</h1>
-<p>Good news updates the latest news in Sports <br>
-    Religions, politics, culture, Entertainment<br>
-     and All Trends News
+<div class="content">
+    <h1>All over the World</h1>
 
-</p1>
+<p>Good news updates the latest news in Sports 
+    Religions,<br> politics,culture, Entertainment
+     and All Trends News</p1>
+</div>
 <img src="world .png">
-
+<div class="search-container">
+    <form action="/search" method="get">
+      <input type="text" placeholder="Search..." name="query" required>
+      <button type="submit">Search</button>
+    </form>
+  </div>
 </body>
 </html>
