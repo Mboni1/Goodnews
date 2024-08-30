@@ -1,5 +1,7 @@
 body{
     background-color:#071d3c ;
+    display:absolute;
+    margin: auto;
 }
 div.content {
     background-color: #071d3c;
@@ -22,7 +24,7 @@ p {
 }
 img{
     position: relative;
-     
+
 }
 
 
@@ -84,6 +86,13 @@ height: 150px; /* Adjust based on your logo size */
 
 .search-container {
 text-align: center;
+width: 200px;
+border-radius: 5px;
+padding: 100px;
+margin: 500px;
+}
+button:hover {
+    background-color: goldenrod;
 }
 
 input[type="text"] {
@@ -98,16 +107,12 @@ button {
 padding: 10px 20px;
 font-size: 16px;
 border: none;
-background-color: #0d7ef0ea;
+background-color: goldenrod;
 color: white;
 border-radius: 5px;
 cursor: pointer;
-margin-left: 50px;
-}
-
-button:hover {
-background-color: goldenrod;
-}   
+margin-left: 15px;
+}  
 .container {
     background-color: #fff;
     border-radius: 8px;
