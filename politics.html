@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Politics</title>
+    <title>Goodnews</title>
     <link rel="stylesheet" href="politics.css">
 </head>
 <body>
-    <!--navbar section-->  
+    <!--Navbar section-->  
     <nav class="navbar ">
         <div class="navbar-container">
+          <a href="#home" id="navbar_logo">Sports</a>
           <div class="navbar-toggle" id="mobile-menu">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -17,44 +18,49 @@
           </div>
           <ul class="navbar-menu">
           <li class="navbar-item">
-            <a href="" class="navbar-links">Home</a>
+            <a href="#home" class="navbar-links" id="home-page">Home</a>
           </li>
           <li class="navbar-item">
-            <a href="" class="navbar-links">Tech</a>
+            <a href="#about" class="navbar-links" id="about-page">About</a>
           </li>
           <li class="navbar-item">
-            <a href="" class="navbar-links">products</a>
+            <a href="#services" class="navbar-links" id="services-page">Services</a>
           </li>
-                    
+             <li class="navbar-btn">
+            <a href="#sign-in" class="button" id="signin">Sign In</a>
+          </li>
           <li class="navbar-btn">
-            <a href="" class="button">sign up</a>
+            <a href="sign-up" class="button" id="signup">Sign Up</a>
           </li>
         </ul>
-        </div>
+      </div>
     </nav>
     <!--Hero section-->
-    <div class="main">
-      <div class="main_container">
-        <div class="main_content">
-          <h1 class="main_content--text">The Latest politics News</h1>
-          <p>Showbizz</p>
-          <button class="main_btn"><a href="/">Readmore</a></button>
-        </div>
-        <div class="main_img--container"></div>
-        <img src="images/mbappe.jpg" alt="" id="main_img"/>
+    <div class="hero" id="home">
+      <div class="hero__container">
+         <h1 class="main__heading">The Latest politics News<span>Showbizz</span></h1>
+         <p class="hero__description">All over the world</p>
+         <button class="main__btn"><a href="/">Readmore</a></button>
       </div>
     </div>
-    <!--services section-->
-    <div class="services">
-      <hi>the trends on politics</hi>
-      <div class="services_container">
-        <div class="services_card">
-          <h2>the goverment of kenya are in trouble</h2>
-          <p>Gen-z in kenya</p>
-          <button>Readmore</button>
-        </div>
-
+       
+    <!--About section-->
+  <div class="main" id="about">
+    <div class="main__container">
+      <div class="main __img--container" >
+        <div class="main__img--card">mbappe .jpg</div>
       </div>
+      <div class="main__content">
+        <h1>Floop of Real Madrid?</h1>
+        <h2>He will win ballon d'or</h2>
+        <p> You can readmore news about kylian mbappe</p>
+        <button class="main__btn"><a href="/">Readmore</a></button>
+      </div>
+    </div>
+  </div>
+        
+
+      
       <div class="services_card">
           <h2>the goverment of kenya are in trouble</h2>
           <p>Gen-z in kenya</p>
