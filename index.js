@@ -1,20 +1,9 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const signInForm = document.getElementById('signInForm');
-    const registerForm = document.getElementById('registerForm');
-    const signInBtn = document.getElementById('signInBtn');
-    const registerBtn = document.getElementById('registerBtn');
+const menu=document.querySelector('#mobile-menu')
+const menuLinks=document.querySelector('.navbar-menu')
 
-    signInBtn.addEventListener('click', function() {
-        signInForm.classList.remove('hidden');
-        registerForm.classList.add('hidden');
-        signInBtn.style.backgroundColor = '#0056b3';
-        registerBtn.style.backgroundColor = '#007BFF';
-    });
-
-    registerBtn.addEventListener('click', function() {
-        registerForm.classList.remove('hidden');
-        signInForm.classList.add('hidden');
-        registerBtn.style.backgroundColor = '#0056b3';
-        signInBtn.style.backgroundColor = '#007BFF';
-    });
-});
+//Display mobile menu
+const mobileMenu =() =>{
+menu.classList.toggle('is-active');
+menuLinks.classList.toggle('active')
+}
+menu.addEventListener('click', mobileMenu) 
