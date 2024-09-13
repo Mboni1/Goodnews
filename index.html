@@ -7,129 +7,148 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body> 
-   <!--navbar section-->  
-   <nav class="navbar ">
-    <div class="navbar_container">
-        <a href="#home" id="navbar_logo">logo1.png</a>
-      <div class="navbar_toggle" id="mobile-menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-      <ul class="navbar_menu">
-      <li class="navbar_item">
-        <a href="#home" class="navbar_links" id="home-page">Home</a>
-      </li>
-      <li class="navbar_item">
-        <a href="politics" class="navbar_links" id="Sports">Sports</a>
-      </li>
-      <li class="navbar_item">
-        <a href="politics" class="navbar_links" id="politics">politics</a>
-      </li>
-         <li class="navbar_btn">
-        <a href="#sign-in" class="button" id="signin">Sign In</a>
-      </li>
-      <li class="navbar_btn">
-        <a href="/" class="button" id="signup">Sign Up</a>
-      </li>
-    </ul>
- </div>
+
+<!--Navbar section-->  
+<nav class="navbar ">
+  <div class="navbar__container">
+    <div class="logo">
+    <img src="logo1.png" alt="logo">
+    </div>
+    <div class="navbar__toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <ul class="navbar__menu">
+    <li class="navbar__item">
+      <a href="#home" class="navbar__links" id="home-page">Home</a>
+    </li>
+    <li class="navbar__item">
+      <a href="#sports" class="navbar__links" id="Sports">Sports</a>
+    </li>
+    <li class="navbar__item">
+      <a href="#politics" class="navbar__links" id="politics">politics</a>
+    </li>
+    <li class="navbar__item">
+      <a href="#trendz news" class="navbar__links" id="trendz news">Trendz News</a>
+    </li>
+   
+       <li class="navbar__btn">
+      <a href="#sign-in" class="button" id="signin">Sign In</a>
+    </li>
+    <li class="navbar__btn">
+      <a href="sign-up" class="button" id="signup">Sign Up</a>
+    </li>
+  </ul>
+</div>
 </nav>
- <!--main section-->
- <div class="main" id="home">
-    <div class="main_container">
-      <div class="main_content">
-        <h1 class="main_content--text">The Latest Trends News</h1>
-        <p class="main_description">Showbizz</p>
-        <button class="main_btn"><a href="/">Readmore</a></button>
-      </div>
-      <div class="main_img--container"></div>
-      <img src="images/mbappe.jpg" alt="" id="main_img"/>
+<!--Hero section-->
+<div class="hero" id="home">
+<div class="hero__container">
+   <h1 class="hero__heading">The Latest <span>Sports</span> news , <span>politics</span> news &<span> Showbiz</span>
+   <p class="hero__description">All over the world</p>
+   <div class="search-container">
+    <form action="/search" method="get">
+    <input type="text" placeholder="Search..." name="query" required>
+    <button type="submit">Search</button>
+
+</div>
+</div>
+ 
+<!--Sports section-->
+<div class="main" id="Home">
+<div class="main__container">
+<div class="main __img--container" >
+  <div class="main__img--card"></div>
+  <img src="mbappe.jpg" alt="kylian mbappe">
+</div>
+<div class="main__content">
+  <h1>Floop of Real Madrid?</h1>
+  <h2>He will win ballon d'or?</h2>
+  <p> You can readmore news about kylian mbappe</p>
+  <button class="main__btn"><a href="/">Readmore</a></button>
+</div>
+</div>
+</div>
+  <!--servivices section-->
+<div class="services" id="services">
+  <h1>Donald Trump</h1>
+  <div class="services__wrapper">
+    <div class="services__card">
+      <h2>American President Again</h2>
+      <div class="services__btn"><button>Explorer more</button></div>
+    </div>
+ </div>
+</div>
+  
+
+<!--Footer section-->
+<div class=" footer__container" id="Home">
+<div class="footer__links">
+<div class="footer__links--wrapper">
+  <div class="footer__links--items">
+   <h2>About Us</h2>
+   <a href="/">How it works</a>
+   <a href="/">Testmonials</a>
+   <a href="/"> Careers</a>
+   <a href="/">investments</a>
+   <a href="/">Term of services</a>
+  </div> 
+  <div class="footer__links--items">
+   <h2>Contact Us</h2>
+   <a href="/">Contact</a>
+   <a href="/">Support</a>
+   <a href="/"> Destinations</a>
+   <a href="/">sponsorships</a>
+  </div> 
+ </div>
+ <div class="footer__links--wrapper">
+  <div class="footer__links--items">
+   <h2>Videos</h2>
+   <a href="/">Submit video</a>
+   <a href="/">Ambassadors</a>
+   <a href="/"> Careers</a>
+   <a href="/">Agency</a>
+   <a href="/">Influencer</a>
+  </div> 
+  <div class="footer__links--items">
+   <h2>social media</h2>
+   <a href="/">instagram</a>
+   <a href="/">Facebook</a>
+   <a href="/"> youtube</a>
+   <a href="/">twitter</a>
+  </div>
+ </div>
+</div>
+<div class="social__media">
+  <div class="social__media--wrap">
+    <div class="footer__logo">
+      <a href="/" id="footer_logo"><i class="logo.png"></i></a>
+    </div>
+    <p class="website__right">Gnews 2024. All rights reserved</p>
+    <div class="social__icons">
+     <a href="/" class="social_icon--link" target="__blank">
+      <i class="fab fa-Facebook"></i>
+     </a> 
+     <a href="/" class="social__icon--link" target="__blank">
+      <i class="fab fa-instagram"></i>
+     </a> 
+     <a href="/" class="social__icon--link" target="__blank">
+      <i class="fab fa-twitter"></i>
+     </a> 
+     <a href="/" class="social__icon--link" target="__blank">
+      <i class="fab fa-linkedin"></i>
+     </a> 
+     <a href="/" class="social__icon--link" target="__blank">
+      <i class="fab fa-Youtube"></i>
+     </a> 
     </div>
   </div>
-         <!--services section-->
-    <div class="services" id="About">
-        <div class="services">
-          <div class="services">
-           <div class="services">Icon</div>
-          </div>
-        <div class="services_content">
-            <h1>the goverment of kenya are in trouble</h1>
-            <p>Gen-z in kenya</p>
-            <button class="services_btn"><a href="#">Readmore</a></button>
-          </div>
-      </div>
-      <!--Footer section-->
-     <div class=" footer_container">
-      <div class="footer_links">
-        <div class="footer_links--wrapper">
-          <div class="footer_links--items">
-           <h2>About Us</h2>
-           <a href="/">How it works</a>
-           <a href="/">Testmonials</a>
-           <a href="/"> Careers</a>
-           <a href="/">investments</a>
-           <a href="/">Term of services</a>
-          </div> 
-          <div class="footer_links--items">
-           <h2>Contact Us</h2>
-           <a href="/">Contact</a>
-           <a href="/">Support</a>
-           <a href="/"> Destinations</a>
-           <a href="/">sponsorships</a>
-          </div> 
-         </div>
-         <div class="footer_links--wrapper">
-          <div class="footer_links--items">
-           <h2>Videos</h2>
-           <a href="/">Submit video</a>
-           <a href="/">Ambassadors</a>
-           <a href="/"> Careers</a>
-           <a href="/">Agency</a>
-           <a href="/">Influencer</a>
-          </div> 
-          <div class="footer_links--items">
-           <h2>social media</h2>
-           <a href="/">instagram</a>
-           <a href="/">Facebook</a>
-           <a href="/"> youtube</a>
-           <a href="/">twitter</a>
-          </div>
-         </div>
-        </div>
-        <div class="social_media">
-          <div class="social_media--wrap">
-            <div class="footer_logo">
-              <a href="/" id="footer_logo"><i class="logo.png"></i></a>
-            </div>
-            <p class="website_right">Gnews 2024. All rights reserved</p>
-            <div class="social_icons">
-             <a href="/" class="social_icon--link" target="_blank">
-              <i class="fab fa-Facebook"></i>
-             </a> 
-             <a href="/" class="social_icon--link" target="_blank">
-              <i class="fab fa-instagram"></i>
-             </a> 
-             <a href="/" class="social_icon--link" target="_blank">
-              <i class="fab fa-twitter"></i>
-             </a> 
-             <a href="/" class="social_icon--link" target="_blank">
-              <i class="fab fa-linkedin"></i>
-             </a> 
-             <a href="/" class="social_icon--link" target="_blank">
-              <i class="fab fa-Youtube"></i>
-             </a> 
-            </div>
-          </div>
-        </div>
-      <img src="world .png">
-      <div class="search-container">
-        <form action="/search" method="get">
-        <input type="text" placeholder="Search..." name="query" required>
-        <button type="submit">Search</button>
-    </form>
-  </div>
-  <script src="index.js"></script>
+</div>
+</div>
+<script src="politics.js"></script>
 </body>
 </html>
+
+
+  
